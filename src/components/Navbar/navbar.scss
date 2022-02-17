@@ -30,7 +30,7 @@
     }
 
     &__primarynav,
-    &__secondarynav {
+    &__secondary{
         display: flex;
         align-items: center;
         margin: 0;
@@ -85,7 +85,7 @@
         }
     }
 
-    &__primarynav {
+    &__primary{
         position: absolute;
         top: 70px;
         left: 0;
@@ -225,7 +225,7 @@
         }
     }
     
-    &__secondarynav {
+    &__secondary{
         margin-left: auto;
     }
 
