@@ -53,7 +53,7 @@ export const getCurrentUser = () => {
 firebase.initializeApp(firebaseConfig)
 
 export const auth = firebase.auth()
-export const firestore = firebase.firestore()
+export const firestore = firebase.database()
 
 // Sign in With Google Setup with popup
 export const googleProvider = new firebase.auth.GoogleAuthProvider()
