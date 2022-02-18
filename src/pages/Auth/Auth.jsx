@@ -5,7 +5,8 @@ import SignUp from "../../components/SignUp/SignUp";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { staggerOne, authFadeInUpVariants, modalVariants, authPageFadeInVariants } from "../../motionUtils";
-import { LOGO_URL, SIGNIN_BGIMG_URL } from "../../requests.js";
+import { LOGO_URL, SIGNIN_BGIMG_URL } from "../../requests.js"; 
+
 import { useSelector } from "react-redux";
 import { selectAuthErrors } from "../../redux/auth/auth.selectors";
 
