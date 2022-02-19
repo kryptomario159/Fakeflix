@@ -5,6 +5,10 @@ export const GITHUB_AVATAR_URL = "https://avatars.githubusercontent.com/u/250785
 const GITHUB_ASSETS_BASE_URL = "http://metazooie.com/img/hero_desktop.webp";
 export const LANG = "en-US";
 export const REGION = "US";
+
+
+
+
 export const BASE_IMG_URL = "https://static.turbosquid.com/Preview/2019/10/31__15_33_30/0001.jpg5ADE644F-B9A8-4701-B973-9AAB28779EE1DefaultHQ.jpg";
 export const FALLBACK_IMG_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_readme.png`;
 export const LOGO_URL = `http://metazooie.com/img/logo_white.png`;
@@ -12,6 +16,7 @@ export const MOBILE_LOGO_URL = `https://i.ibb.co/7j9tXtP/logo-white-1-mitchell.p
 export const PROFILE_PIC_URL = `https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png`;
 export const SIGNIN_BGIMG_URL = `${GITHUB_ASSETS_BASE_URL}`;
 export const TADUM_SOUND_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_TaDum.mp3`;
+export const BASE_IMG_URLD = "https://static.turbosquid.com/Preview/2019/10/31__15_33_30/0001.jpg5ADE644F-B9A8-4701-B973-9AAB28779EE1DefaultHQ.jpg";
 const ONEMONTHAGO = getOneMonthAgoReleaseDate();
 const { REACT_APP_API_KEY } = process.env;
 
