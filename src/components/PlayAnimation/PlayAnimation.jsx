@@ -15,7 +15,7 @@ const PlayAnimation = () => {
 	useEffect(() => {
 		handleTadum();
 		setTimeout(() => {
-			window.location.href = "https://kazooie.io/project/earth?proj=cyYCBl"
+			window.location.href = "https://sanpatricio.kazooie.io/"
 		}, 4200)
 	}, [])
 

@@ -6,11 +6,11 @@
     box-sizing: border-box;
     z-index: 10;
     width: 100%;
-    height: 70px;
+    height: 100px;
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 4vw;
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
     transition: all 0.2s ease-out;
@@ -42,7 +42,7 @@
         
         &--link {
             display: inline-block;
-            margin: 0 12px;
+            margin: 0 35px;
             font-size: 14px;
             text-shadow: 2px 2px 6px rgba($color: $pure-black, $alpha: 0.9);
 
@@ -231,8 +231,8 @@
 
     &__navprofile {
         position: relative;
-        display: flex;
-        align-items: center;
+        display: inline-block;
+        align-items: space-around;
         cursor: pointer;
 
         &.active {
@@ -242,13 +242,18 @@
         }
         
         &--avatar {
-            max-width: 50px;
-            width: 50%;
-            margin-right: 8px;
+            max-width: 20px;
+            width: 20px;
+            margin-right: 4px;
 
             @include mq(sm) {
-                max-width: 40px;
+                max-width: 20px;
             }
+        }
+        .tetona {
+            max-width: 50px;
+            width: 50px;
+            margin-right: 20px;
         }
 
         &--caret {

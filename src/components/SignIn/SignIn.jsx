@@ -3,11 +3,14 @@ import InputField from "../InputField/InputField";
 import Loader from "../Loader/Loader";
 import { motion } from "framer-motion";
 import { authFadeInUpVariants, staggerOne } from "../../motionUtils";
-import { FcGoogle } from "react-icons/fc";
+/* import { FcGoogle } from "react-icons/fc"; */
+import jazzicon from '@metamask/jazzicon';
 import { useForm } from "react-hook-form";
 import { emailSignInStart, googleSignInStart, anonymousSignInStart } from "../../redux/auth/auth.actions";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAuthLoadingState } from "../../redux/auth/auth.selectors";
+
+
 
 const SignIn = () => {
 	const dispatch = useDispatch();
@@ -74,8 +77,8 @@ const SignIn = () => {
 				onClick={() => dispatch(googleSignInStart())}
 				disabled={isLoading}
 			>
-				{!isLoading && <FcGoogle />}
-				{isLoading ? <Loader /> : 'Sign in with Google'}
+				{!isLoading && jazzicon}
+				{isLoading ? <Loader /> : 'Sign in with Metamask'}
 			</motion.button>
 			<motion.button
 				type="button"

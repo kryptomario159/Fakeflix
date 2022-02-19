@@ -230,7 +230,7 @@ export const fetchPopularDataConfig = [
 		id: 1,
 		thunk: fetchLatestMoviesAsync,
 		url: fetchReleasedMoviesByOneMonth,
-		title: "New on Fakeflix",
+		title: "New on Metazooie",
 		genre: "newin",
 		selector: movieSelectors.selectLatestMovies,
 	},

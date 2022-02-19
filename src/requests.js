@@ -1,11 +1,11 @@
 import { getOneMonthAgoReleaseDate } from "./utils";
 
-export const GITHUB_BASE_URL = "https://github.com/Th3Wall";
+export const GITHUB_BASE_URL = "https://kazooie.io/";
 export const GITHUB_AVATAR_URL = "https://avatars.githubusercontent.com/u/25078541?v=4";
 const GITHUB_ASSETS_BASE_URL = "http://metazooie.com/img/hero_desktop.webp";
 export const LANG = "en-US";
 export const REGION = "US";
-export const BASE_IMG_URL = "https://i.ibb.co/R32XDZj/Highres-Screenshot00001.png";
+export const BASE_IMG_URL = "https://i.ibb.co/cbgwqZm/metazooie-fondo.pngs";
 export const FALLBACK_IMG_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_readme.png`;
 export const LOGO_URL = `http://metazooie.com/img/logo_white.png`;
 export const MOBILE_LOGO_URL = `http://metazooie.com/img/logo_white.png`;

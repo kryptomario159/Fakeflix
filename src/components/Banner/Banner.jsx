@@ -79,7 +79,7 @@ const Banner = ({ type }) => {
 								to={"/play"}
 							>
 								<FaPlay />
-								<span>Play</span>
+								<span>Enter</span>
 							</Link>
 							<button
 								className="Banner__button"

@@ -80,7 +80,7 @@ const DetailModal = () => {
 										to={'/play'}
 									>
 										<FaPlay />
-										<span>Play</span>
+										<span>Enter</span>
 									</Link>
 									{!isFavourite
 										? (

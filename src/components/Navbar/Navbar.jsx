@@ -8,7 +8,7 @@ import { navbarFadeInVariants } from "../../motionUtils";
 import { LOGO_URL, MOBILE_LOGO_URL, PROFILE_PIC_URL } from "../../requests";
 import { FaCaretDown } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import Searchbar from "../Searchbar/Searchbar";
+/* import Searchbar from "../Searchbar/Searchbar"; */
 import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentUser } from "../../redux/auth/auth.selectors";
 import { signOutStart } from "../../redux/auth/auth.actions";
@@ -116,16 +116,16 @@ const Navbar = () => {
 					</div>
 				)}
 				<div className="Navbar__secondarynav">
-					<div className="Navbar__navitem">
+					{/* <div className="Navbar__navitem">
 						<Searchbar />
-					</div>
+					</div> */}
 					<div className="Navbar__navitem">
 						<div
 							className={`Navbar__navprofile ${profileNav && "active"}`}
 							onClick={() => setProfileNav(!profileNav)}
 						>
 							<img
-								className="Navbar_navprofile--avatar Navbar_navprofile--toggler"
+								className="tetona Navbar_navprofile--toggler"
 								src={currentUser && currentUser.photoURL ? currentUser.photoURL : PROFILE_PIC_URL}
 								alt="Profile Picture"
 							/>
