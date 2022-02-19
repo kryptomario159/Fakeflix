@@ -5,7 +5,7 @@ import { staggerOne, bannerFadeInLoadSectionVariants, bannerFadeInVariants, bann
 import { BASE_IMG_URL } from "../../requests";
 import { FaPlay } from "react-icons/fa";
 import { BiInfoCircle } from "react-icons/bi";
-import { randomize, truncate } from "../../utils";
+import { randomize } from "../../utils";
 import { Link } from "react-router-dom";
 import SkeletonBanner from "../SkeletonBanner/SkeletonBanner";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,7 +31,7 @@ const Banner = ({ type }) => {
 	const { loading, error, data: results } = myData;
 	const finalData = results[randomize(results)];
 	const fallbackTitle = finalData?.title || finalData?.name || finalData?.original_name;
-	const description = truncate(finalData?.overview, 150);
+	/* const description = truncate(finalData?.overview, 150); */
 	const dispatch = useDispatch();
 
 	const handlePlayAnimation = event => {
@@ -71,7 +71,7 @@ const Banner = ({ type }) => {
 						animate='animate'
 						exit='exit'
 					>
-						<motion.h1 variants={bannerFadeInUpVariants} className="Banner__content--title">{fallbackTitle}</motion.h1>
+						<motion.h1 variants={bannerFadeInUpVariants} className="Banner__content--title">World name</motion.h1>
 						<motion.div variants={bannerFadeInUpVariants} className="Banner__buttons">
 							<Link
 								className="Banner__button"
@@ -89,7 +89,7 @@ const Banner = ({ type }) => {
 								<span>More info</span>
 							</button>
 						</motion.div>
-						<motion.p variants={bannerFadeInUpVariants} className="Banner__content--description">{description}</motion.p>
+						<motion.p variants={bannerFadeInUpVariants} className="Banner__content--description">Metazooie</motion.p>
 					</motion.div>
 					<div className="Banner__panel" />
 					<div className="Banner__bottom-shadow" />

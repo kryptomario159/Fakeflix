@@ -19,7 +19,7 @@ const DetailModal = () => {
 	const modalClosed = useSelector(selectModalState);
 	const modalContent = useSelector(selectModalContent);
 	const handleModalClose = () => dispatch(hideModalDetail());
-	const { overview, fallbackTitle, backdrop_path, release_date, first_air_date, vote_average, original_language, adult, genresConverted, isFavourite } = modalContent;
+	const {  fallbackTitle, backdrop_path, release_date, first_air_date, vote_average, original_language, adult, genresConverted, isFavourite } = modalContent;
 	const joinedGenres = genresConverted ? genresConverted.join(', ') : "Not available";
 	const maturityRating = adult === undefined ? "Not available" : adult ? "Suitable for adults only" : "Suitable for all ages";
 	const reducedDate = release_date ? dateToYearOnly(release_date) : first_air_date ? dateToYearOnly(first_air_date) : "Not Available";
@@ -95,8 +95,8 @@ const DetailModal = () => {
 								</div>
 							</div>
 							<motion.div variants={staggerOne} initial="initial" animate="animate" exit="exit" className="Modal__info--wrp">
-								<motion.h3 variants={modalFadeInUpVariants} className="Modal__info--title">{fallbackTitle}</motion.h3>
-								<motion.p variants={modalFadeInUpVariants} className="Modal__info--description">{overview}</motion.p>
+								<motion.h3 variants={modalFadeInUpVariants} className="Modal__info--title">Metazooie</motion.h3>
+								<motion.p variants={modalFadeInUpVariants} className="Modal__info--description">Metazooie va a revolucionar la manera en la que el metaverso funciona</motion.p>
 								<motion.hr variants={modalFadeInUpVariants} className="Modal__info--line"/>
 								<motion.h4 variants={modalFadeInUpVariants} className="Modal__info--otherTitle">Info on <b>{fallbackTitle}</b></motion.h4>
 								<motion.div variants={modalFadeInUpVariants} className="Modal__info--row">

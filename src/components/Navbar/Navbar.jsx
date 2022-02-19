@@ -51,22 +51,22 @@ const Navbar = () => {
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/tvseries" activeClassName="activeNavLink">
-								TV Series
+								Metazooie Originals
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/movies" activeClassName="activeNavLink">
-								Movies
+								Metahuman interaction
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/popular" activeClassName="activeNavLink">
-								New & Popular
+								Music Experience
 							</NavLink>
 						</li>
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/mylist" activeClassName="activeNavLink">
-								My list
+								Digital Art
 							</NavLink>
 						</li>
 					</ul>
@@ -92,22 +92,22 @@ const Navbar = () => {
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/tvseries" activeClassName="activeNavLink">
-											TV Series
+										Metazooie Originals
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/movies" activeClassName="activeNavLink">
-											Movies
+										Metahuman interaction
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/popular" activeClassName="activeNavLink">
-											New & Popular
+										Music Experience
 										</NavLink>
 									</li>
 									<li className="Navbar__navlinks--link">
 										<NavLink to="/mylist" activeClassName="activeNavLink">
-											My list
+										Digital Art
 										</NavLink>
 									</li>
 								</ul>

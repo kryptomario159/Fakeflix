@@ -15,7 +15,7 @@ const PlayAnimation = () => {
 	useEffect(() => {
 		handleTadum();
 		setTimeout(() => {
-			window.location.href = "https://sanpatricio.kazooie.io/"
+			window.location.href = "https://kazooie.io/project/earth?proj=cyYCBl"
 		}, 4200)
 	}, [])
 
@@ -23,7 +23,7 @@ const PlayAnimation = () => {
 		<div className='PlayAnimation__wrp'>
 			<audio ref={soundRef} src={TADUM_SOUND_URL} />
 			<span className="PlayAnimation__text">
-				Metoozie
+				Metazooie
 			</span>
 		</div>
 	)
