@@ -5,7 +5,7 @@ export const GITHUB_AVATAR_URL = "https://avatars.githubusercontent.com/u/250785
 const GITHUB_ASSETS_BASE_URL = "http://metazooie.com/img/hero_desktop.webp";
 export const LANG = "en-US";
 export const REGION = "US";
-export const BASE_IMG_URL = "https://ecotourism-world.com/wp-content/uploads/2021/02/mandy-choi-_qZ0us4az20-unsplash-2.jpg";
+export const BASE_IMG_URL = "https://i.ibb.co/R32XDZj/Highres-Screenshot00001.png";
 export const FALLBACK_IMG_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_readme.png`;
 export const LOGO_URL = `http://metazooie.com/img/logo_white.png`;
 export const MOBILE_LOGO_URL = `http://metazooie.com/img/logo_white.png`;
@@ -25,7 +25,7 @@ const requests = {
 	fetchTrendingMovies: `/trending/movies/week?api_key=${REACT_APP_API_KEY}&sort_by=popularity.desc&language=${LANG}`,
 	fetchUpcomingMovies: `/movie/upcoming?api_key=${REACT_APP_API_KEY}&language=${LANG}`,
 	fetchTopRated: `/movie/top_rated?api_key=${REACT_APP_API_KEY}&sort_by=popularity.desc&region=${REGION}`,
-	fetchActionMovies: `/discover/movie?api_key=https://ecotourism-world.com/wp-content/uploads/2021/02/mandy-choi-_qZ0us4az20-unsplash-2.jpg&with_genres=28&sort_by=popularity.desc&language=${LANG}`,
+	fetchActionMovies: `/discover/movie?api_key=https://i.ibb.co/R32XDZj/Highres-Screenshot00001.png&with_genres=28&sort_by=popularity.desc&language=${LANG}`,
 	fetchAdventureMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=12&sort_by=popularity.desc&language=${LANG}`,
 	fetchComedyMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=35&sort_by=popularity.desc&language=${LANG}`,
 	fetchHorrorMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=27&sort_by=popularity.desc&language=${LANG}`,
