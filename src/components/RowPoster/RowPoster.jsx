@@ -36,10 +36,10 @@ const RowPoster = result => {
 		>
 			{isLarge ? (
 				poster_path ? (
-					<img src={`${BASE_IMG_URL}/${poster_path}`} alt={fallbackTitle} />
+					<img src={`${BASE_IMG_URL}`} alt={fallbackTitle} />
 				) : ""
 			) : backdrop_path ? (
-				<img src={`${BASE_IMG_URL}/${backdrop_path}`} alt={fallbackTitle} />
+				<img src={`${BASE_IMG_URL}`} alt={fallbackTitle} />
 			) : (
 				<>
 					<img src={FALLBACK_IMG_URL} alt={fallbackTitle} />

@@ -242,8 +242,8 @@
         }
         
         &--avatar {
-            max-width: 30px;
-            width: 100%;
+            max-width: 50px;
+            width: 50px;
             margin-right: 8px;
 
             @include mq(sm) {

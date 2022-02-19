@@ -43,7 +43,7 @@ const Navbar = () => {
 					<img className="Navbar__logo" src={width >= 600 ? LOGO_URL : MOBILE_LOGO_URL} alt="" />
 				</Link>
 				{width >= 1024 ? (
-					<ul className="Navbar__primarynav Navbar__navlinks">
+					<ul className="Navbar_primarynav Navbar_navlinks">
 						<li className="Navbar__navlinks--link">
 							<NavLink to="/browse" activeClassName="activeNavLink">
 								Home
@@ -72,11 +72,11 @@ const Navbar = () => {
 					</ul>
 				) : (
 					<div
-						className={`Navbar__primarynav Navbar__navlinks ${isScrolled && "Navbar__primarynav--scrolled"}`}
+						className={`Navbar_primarynav Navbarnavlinks ${isScrolled && "Navbar_primarynav--scrolled"}`}
 						onClick={() => setGenresNav(!genresNav)}
 					>
 						<span className="Navbar__navlinks--link">Discover</span>
-						<FaCaretDown className="Navbar__primarynav--toggler Navbar__primarynav--caret" />
+						<FaCaretDown className="Navbar_primarynav--toggler Navbar_primarynav--caret" />
 						<div
 							className={`Navbar__primarynav--content ${genresNav ? "active" : ""}`}
 						>
@@ -125,11 +125,11 @@ const Navbar = () => {
 							onClick={() => setProfileNav(!profileNav)}
 						>
 							<img
-								className="Navbar__navprofile--avatar Navbar__navprofile--toggler"
+								className="Navbar_navprofile--avatar Navbar_navprofile--toggler"
 								src={currentUser && currentUser.photoURL ? currentUser.photoURL : PROFILE_PIC_URL}
 								alt="Profile Picture"
 							/>
-							<FaCaretDown className="Navbar__navprofile--toggler Navbar__navprofile--caret" />
+							<FaCaretDown className="Navbar_navprofile--toggler Navbar_navprofile--caret" />
 							<div className={`Navbar__navprofile--content ${profileNav ? "active" : ""}`}>
 								{profileNav && (
 									<ul

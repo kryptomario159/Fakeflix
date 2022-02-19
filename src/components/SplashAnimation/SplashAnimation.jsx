@@ -28,8 +28,8 @@ const SplashAnimation = () => {
 	}, [history])
 
 	return (
-			<motion.div
-		id="SplashAnimation__wrp"
+		<motion.div
+			id="SplashAnimation__wrp"
 			className='SplashAnimation'
 			initial={{opacity: 0}}
 			animate={{opacity: 1}}

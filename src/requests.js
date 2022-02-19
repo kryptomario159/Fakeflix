@@ -5,25 +5,27 @@ export const GITHUB_AVATAR_URL = "https://avatars.githubusercontent.com/u/250785
 const GITHUB_ASSETS_BASE_URL = "http://metazooie.com/img/hero_desktop.webp";
 export const LANG = "en-US";
 export const REGION = "US";
-export const BASE_IMG_URL = "https://image.tmdb.org/t/p/original";
+export const BASE_IMG_URL = "https://ecotourism-world.com/wp-content/uploads/2021/02/mandy-choi-_qZ0us4az20-unsplash-2.jpg";
 export const FALLBACK_IMG_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_readme.png`;
 export const LOGO_URL = `http://metazooie.com/img/logo_white.png`;
 export const MOBILE_LOGO_URL = `http://metazooie.com/img/logo_white.png`;
-export const PROFILE_PIC_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_profilepic.png`;
+export const PROFILE_PIC_URL = `https://storage.googleapis.com/assets.axieinfinity.com/axies/168687/axie/axie-half.png`;
 export const SIGNIN_BGIMG_URL = `${GITHUB_ASSETS_BASE_URL}`;
 export const TADUM_SOUND_URL = `${GITHUB_ASSETS_BASE_URL}/Fakeflix_TaDum.mp3`;
 const ONEMONTHAGO = getOneMonthAgoReleaseDate();
 const { REACT_APP_API_KEY } = process.env;
 
+
+
 const requests = {
-	fetchSearchQuery: `/search/multi?api_key=${REACT_APP_API_KEY}&language=${LANG}&query=`,
+	fetchSearchQuery: `/search/multi?api_key=${BASE_IMG_URL}&language=${LANG}&query=`,
 	fetchTrendingAll: `/trending/all/week?api_key=${REACT_APP_API_KEY}&sort_by=popularity.desc&language=${LANG}`,
 	fetchReleasedMoviesByOneMonth: `/discover/movie?api_key=${REACT_APP_API_KEY}&primary_release_date.gte=${ONEMONTHAGO}&sort_by=popularity.desc&language=${LANG}`,
     // Movies
 	fetchTrendingMovies: `/trending/movies/week?api_key=${REACT_APP_API_KEY}&sort_by=popularity.desc&language=${LANG}`,
 	fetchUpcomingMovies: `/movie/upcoming?api_key=${REACT_APP_API_KEY}&language=${LANG}`,
 	fetchTopRated: `/movie/top_rated?api_key=${REACT_APP_API_KEY}&sort_by=popularity.desc&region=${REGION}`,
-	fetchActionMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=28&sort_by=popularity.desc&language=${LANG}`,
+	fetchActionMovies: `/discover/movie?api_key=https://ecotourism-world.com/wp-content/uploads/2021/02/mandy-choi-_qZ0us4az20-unsplash-2.jpg&with_genres=28&sort_by=popularity.desc&language=${LANG}`,
 	fetchAdventureMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=12&sort_by=popularity.desc&language=${LANG}`,
 	fetchComedyMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=35&sort_by=popularity.desc&language=${LANG}`,
 	fetchHorrorMovies: `/discover/movie?api_key=${REACT_APP_API_KEY}&with_genres=27&sort_by=popularity.desc&language=${LANG}`,
